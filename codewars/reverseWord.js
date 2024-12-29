@@ -2,7 +2,7 @@
 // "This is an example!" = "shiT si na !elpmaxE"
 
 function reverseWord(str) {
-    return str.split(" ")  // split every word into array
+    return str.split(" ")  // split every word int array of word
         .map((word) => word.split("").reverse().join("")) // reverse every word
         .join(" ") // merge the word from array into string
 }
