@@ -23,9 +23,9 @@ function duplicateCount(text) {
     return Array.from(charCount.values()).filter((value) => value > 1).length;
 }
 
-console.log(duplicateCount(""))
-console.log(duplicateCount("abcde"));
-console.log(duplicateCount("aabbcde"))
-console.log(duplicateCount("aabBcde"))
-console.log(duplicateCount("Indivisibility"))
-console.log(duplicateCount("Indivisibilities"))
+console.log(duplicateCount(""))  //0
+console.log(duplicateCount("abcde"));  //0
+console.log(duplicateCount("aabbcde"))  //2 (a & b)
+console.log(duplicateCount("aabBcde"))  //2 (a & b)
+console.log(duplicateCount("Indivisibility"))  //1 (i)
+console.log(duplicateCount("Indivisibilities"))  //2 (i & s)
