@@ -46,3 +46,20 @@ var recoverSecret = function (triplets) {
     return result.join('');
 }
 
+const triplets = [
+    ['t', 's', 'f'],
+    ['a', 's', 'u'],
+    ['m', 't', 'h'],
+    ['h', 'a', 'e'],
+    ['r', 'm', 'f'],
+    ['s', 'u', 'n'],
+    ['n', 'f', 'e'],
+    ['a', 'i', 's'],
+    ['f', 'e', 't'],
+    ['u', 'n', 'h'],
+    ['m', 'f', 'e'],
+    ['a', 't', 'h'],
+    ['t', 'h', 'e']
+];
+
+console.log(recoverSecret(triplets)) //Output : "mathisunravel"
