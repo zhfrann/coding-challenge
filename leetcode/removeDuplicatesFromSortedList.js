@@ -46,7 +46,7 @@ var deleteDuplicates = function (head) {
 };
 
 //* Because it is an sorted list, don't need to create copy list. Just checked the element after the pointer
-var deleteDuplicates = function (head) {
+var deleteDuplicates2 = function (head) {
     let current = head;
 
     while (current !== null & current.next !== null) {
