@@ -36,3 +36,20 @@ var climbStairs = function (n) {
 
     return prev2;
 };
+
+//* Recursive, O(2^n)
+var climbStairs2 = function (n) {
+    if (n === 1) return 1;
+    if (n === 2) return 2;
+    return climbStairs2(n - 1) + climbStairs2(n - 2);
+};
+
+//* Recursive with memoization, O(n)
+var climbStairs3 = function (n, memo = {}) {
+    if (n in memo) return memo[n];
+    if (n === 1) return 1;
+    if (n === 2) return 2;
+
+    memo[n] = climbStairs3(n - 1, memo) + climbStairs3(n - 2, memo);
+    return memo[n];
+}
